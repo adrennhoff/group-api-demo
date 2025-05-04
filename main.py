@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 # Load the CSV file once when the app starts
-CSV_PATH = os.path.join(os.path.dirname(__file__), "Groups_data.csv")
+CSV_PATH = os.path.join(os.path.dirname(__file__), "Group_data.csv")
 df = pd.read_csv(CSV_PATH)
 
 @app.get("/get_data/")
